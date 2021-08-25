@@ -14,15 +14,17 @@ export default function Layout({ children }: Props) {
         <link rel="apple-touch-icon" href="/icon.png" />
         <meta name="theme-color" content="#fff" />
       </Head>
-      <nav>
+      <nav className="main-nav">
         <Navigation />
       </nav>
       <main>{children}</main>
       <style jsx>
         {`
           .root {
-            display: block;
-            padding: 4rem 0;
+            display: flex;
+            flex-direction: column;
+            // background-color: #fff;
+            padding: 1rem 0;
             box-sizing: border-box;
             height: 100%;
           }

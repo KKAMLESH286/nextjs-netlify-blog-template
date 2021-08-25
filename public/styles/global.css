@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 html,
 body {
-  font-family: "Ubuntu", sans-serif;
-  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  background-color: #d33a2c;
   color: #222;
   font-weight: 200;
   height: 100%;
+  /* background-image: linear-gradient(to bottom,var(--card-color,#202020),#333); */
 }
 
 #__next {
@@ -15,7 +17,7 @@ body {
 }
 
 a {
-  color: #9b9b9b;
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -40,4 +42,97 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* .btn-indigo {
+  color: #d33a2c;
+  @apply py-2 px-4  text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75;
+} */
+
+.main-nav {
+  position: relative;
+  display: block;
+  min-width: 0;
+  color: #fff;
+  /* grid-column: span 2; */
+  font-size: 1.05em;
+}
+
+.nav-item {
+  flex-grow: 0;
+  background: 0 0;
+  text-shadow: none;
+  color: inherit;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-family: Arial,-apple-system,BlinkMacSystemFont,Roboto Slab,Droid Serif,Segoe UI,Ubuntu,Cantarell,Georgia,serif;
+}
+
+.main-nav__primary {
+  display: flex;
+  list-style: none;
+  padding: .4em 0;
+  margin: 0;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-shrink: 1;
+  min-width: 0;
+  justify-content: flex-start;
+}
+
+.header {
+  background: #d33a2c;
+  background: var(--THEME_COLOR,#d33a2c);
+  position: relative;
+  display: grid;
+  transition: width .4s ease-in,height .4s ease-in,padding .4s ease-in;
+  -moz-column-gap: 0;
+  column-gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .8em;
+  z-index: 2;
+  grid-template-columns: -webkit-min-content -webkit-min-content 1fr;
+  grid-template-columns: min-content min-content 1fr;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+}
+
+.subnav .nav-item-link:hover {
+  color: #d33a2c;
+  text-shadow: none;
+  font-weight: 700;
+  border-radius: 11px;
+  background-color: #ffe3e3;
+  border: 1px solid #faa4a4
+}
+
+.nav-item-1,.nav-item-10,.nav-item-11,.nav-item-2,.nav-item-3,.nav-item-4,.nav-item-5,.nav-item-6,.nav-item-7,.nav-item-8,.nav-item-9 {
+  display: none
+}
+
+.main-nav__secondary .nav-item-1,.main-nav__secondary .nav-item-10,.main-nav__secondary .nav-item-11,.main-nav__secondary .nav-item-2,.main-nav__secondary .nav-item-3,.main-nav__secondary .nav-item-4,.main-nav__secondary .nav-item-5,.main-nav__secondary .nav-item-6,.main-nav__secondary .nav-item-7,.main-nav__secondary .nav-item-8,.main-nav__secondary .nav-item-9 {
+  display: flex
+}
+
+.subnav-item--active a.nav-item-link,.subnav-item--active a.nav-item-link:hover {
+  background-color: #d33a2c;
+  color: #fff!important;
+  border: 1px solid #d33a2c
+}
+.nav-item--active {
+  background: rgba(0,0,0,.1);
+  border-radius: 11px
+}
+
+.nav-item-2.nav-item--active {
+  background-color: #d33a2c
+}
+
+.main-nav__secondary .nav-item--active {
+  background-color: transparent;
+  margin: 0
 }
