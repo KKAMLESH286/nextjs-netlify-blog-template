@@ -21,16 +21,19 @@ export default function Layout({ children }: Props) {
       <style jsx>
         {`
           .root {
+            
             display: flex;
             flex-direction: column;
             // background-color: #fff;
-            padding: 1rem 0;
+            // padding: 1rem 0;
             box-sizing: border-box;
             height: 100%;
           }
           main {
+            width:80%;
+            margin: 0 auto;
             display: flex;
-            min-height: 100%;
+            // min-height: 100%;
           }
           @media (min-width: 769px) {
             .root {

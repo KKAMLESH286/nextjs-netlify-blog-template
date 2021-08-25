@@ -5,7 +5,7 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #d33a2c;
+  background-color: #fff;
   color: #222;
   font-weight: 200;
   height: 100%;
@@ -24,7 +24,7 @@ a {
 
 a:active,
 a:hover {
-  color: #000;
+  /* color: #000; */
 }
 
 .youtube-container {
@@ -50,12 +50,15 @@ a:hover {
 } */
 
 .main-nav {
+  align-items: center;
+  background-color: #d33a2c;
+  height: 100px;
   position: relative;
   display: block;
   min-width: 0;
   color: #fff;
   /* grid-column: span 2; */
-  font-size: 1.05em;
+  font-size: 1.30em;
 }
 
 .nav-item {
