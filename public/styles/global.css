@@ -1,18 +1,18 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
 
-html,
+/* html,
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fff;
-  color: #222;
+  /* background-color: #fff; */
+  /* color: #222;
   font-weight: 200;
-  height: 100%;
+  height: 100%; */
   /* background-image: linear-gradient(to bottom,var(--card-color,#202020),#333); */
-}
+/* } */ */
 
-#__next {
+/* #__next {
   height: 100%;
 }
 
@@ -20,12 +20,9 @@ a {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
-}
+} */
 
-a:active,
-a:hover {
-  /* color: #000; */
-}
+
 
 .youtube-container {
   position: relative;
@@ -49,7 +46,7 @@ a:hover {
   @apply py-2 px-4  text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75;
 } */
 
-.main-nav {
+/* .main-nav {
   align-items: center;
   background-color: #d33a2c;
   height: 100px;
@@ -57,7 +54,7 @@ a:hover {
   display: block;
   min-width: 0;
   color: #fff;
-  /* grid-column: span 2; */
+  grid-column: span 2;
   font-size: 1.30em;
 }
 
@@ -138,4 +135,4 @@ a:hover {
 .main-nav__secondary .nav-item--active {
   background-color: transparent;
   margin: 0
-}
+} */

@@ -13,19 +13,19 @@ export default function Navigation() {
       <div className="main-nav-child">
       {/* <div className={"container " + (active ? "active" : "")}> */}
         <ul className="main-nav__primary">
-        <button className="py-2 px-4 bg-red-650 text-white font-semibold rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-2  focus:ring-opacity-75">
+        {/* <button className="py-2 px-4 bg-red-650 text-white font-semibold rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-2  focus:ring-opacity-75"> */}
 
-          <li className="nav-item ">
+          <li className="nav-item nav-item-1 ">
             <Link href="/" >
               <a className="nav-item-link">About</a>
             </Link>
             
           </li>
-          </button>
-          <button className="py-2 px-4 bg-red-650 text-white font-semibold rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-2  focus:ring-opacity-75">
+          {/* </button> */}
+          {/* <button className="py-2 px-4 bg-red-650 text-white font-semibold rounded-lg  hover:bg-red-700 focus:outline-none focus:ring-2  focus:ring-opacity-75"> */}
 
 
-          <li className="nav-item ">
+          <li className="nav-item nav-item-2 ">
           
             <Link href="/posts">
               <a
@@ -37,7 +37,7 @@ export default function Navigation() {
             
 
           </li>
-          </button>
+          {/* </button> */}
 
         </ul>
         <style jsx>
