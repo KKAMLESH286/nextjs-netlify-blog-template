@@ -10,9 +10,10 @@ export default function Index() {
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
-      <div className="container max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-        <div className="">
-          <h1>
+      <div className="parent-card">
+      <div className="card card--box-shadow card--light card--orange">
+        
+          <h1 className="author-post__title mt-5 text-5xl">
             Welcome to <span className="fancy">Tinkered Spirit</span>
           </h1>
           {/* <span className="handle">@nextjs-netlify-blog</span> */}

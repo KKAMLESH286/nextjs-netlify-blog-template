@@ -12,6 +12,13 @@ module.exports = ({
           test: /\.svg$/,
           use: "@svgr/webpack",
         },
+        {
+          test: /\.(png|jpe?g|gif|jp2|webp)$/,
+          loader: 'file-loader',
+          options: {
+            name: 'images/[name].[ext]'
+        },
+      }
       ]
     );
     return config;
