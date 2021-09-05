@@ -1,26 +1,45 @@
+import { GetStaticProps } from "next";
+import config from "../lib/config";
+
+
+
 import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
+import PostList from "../components/PostList";
 
-export default function Index() {
+
+import { listTags, TagContent } from "../lib/tags";
+import { countPosts, listPostContent, PostContent } from "../lib/posts";
+
+
+
+
+
+type Props = {
+  posts: PostContent[];
+  tags: TagContent[];
+  pagination: {
+    current: number;
+    pages: number;
+  };
+};
+
+
+export default function Index({ posts, tags, pagination }: Props) {
   return (
     <Layout>
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
-      <div className="parent-card">
-      <div className="card card--box-shadow card--light card--orange">
-        
-          <h1 className="author-post__title mt-5 text-5xl">
-            Welcome to <span className="fancy">Tinkered Spirit</span>
-          </h1>
-          {/* <span className="handle">@nextjs-netlify-blog</span> */}
-          <h2>I'm still trying to unvail my mystery! </h2><br/>
-          <SocialList />
-        </div>
-      </div>
+      <PostList posts={posts} tags={tags} pagination={pagination} />
+      {/* <Index/> */}
+      {/* <div className="parent-card">
+
+      
+      </div> */}
       <style jsx>{`
 
       html, body{
@@ -66,3 +85,19 @@ export default function Index() {
     </Layout>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const posts = listPostContent(1, config.posts_per_page);
+  const tags = listTags();
+  const pagination = {
+    current: 1,
+    pages: Math.ceil(countPosts() / config.posts_per_page),
+  };
+  return {
+    props: {
+      posts,
+      tags,
+      pagination,
+    },
+  };
+};

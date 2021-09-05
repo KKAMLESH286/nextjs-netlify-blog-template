@@ -10,7 +10,7 @@ export default function Navigation() {
   const [active, setActive] = useState(false);
   return (
     <>
-      <Burger active={active} onClick={() => setActive(!active)} />
+      {/* <Burger active={active} onClick={() => setActive(!active)} /> */}
       <div className="main-nav-child">
         <h3 >TSpirit  </h3>
         {/* <Image width="100" height="50"src={tslogo} alt='Picture'/> */}
@@ -20,7 +20,7 @@ export default function Navigation() {
               <a className="nav-item-link">About</a>
             </Link>
           </li>
-          <li className="nav-item nav-item-2 ">
+          {/* <li className="nav-item nav-item-2 ">
             <Link href="/posts">
               <a
                 className="nav-item-link"
@@ -28,7 +28,7 @@ export default function Navigation() {
                 Blog
               </a>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </>

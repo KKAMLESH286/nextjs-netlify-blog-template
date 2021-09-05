@@ -61,7 +61,7 @@ export default function PostList({ posts, tags, pagination }: Props) {
           flex: 1 1 auto;
         }
         .posts li {
-          margin-bottom: 1.5rem;
+          // margin-bottom: 1.5rem;
         }
         .post-list {
           flex: 1 0 auto;
@@ -73,11 +73,11 @@ export default function PostList({ posts, tags, pagination }: Props) {
           margin-bottom: 0.75em;
         }
 
-        @media (min-width: 769px) {
-          .categories {
-            display: block;
-          }
-        }
+        // @media (min-width: 769px) {
+        //   .categories {
+        //     display: block;
+        //   }
+        // }
       `}</style>
     </div>
   );
