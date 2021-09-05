@@ -12,7 +12,7 @@ export default function Navigation() {
     <>
       <Burger active={active} onClick={() => setActive(!active)} />
       <div className="main-nav-child">
-        <h3 >TSpirit</h3>
+        <h3 >TSpirit  </h3>
         {/* <Image width="100" height="50"src={tslogo} alt='Picture'/> */}
         <ul className="main-nav__primary">
           <li className="nav-item nav-item-1">

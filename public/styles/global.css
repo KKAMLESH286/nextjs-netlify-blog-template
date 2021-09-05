@@ -2146,7 +2146,7 @@ body textarea {
 body h1,
 body h2,
 body h3 {
-  line-height: 1.2;
+  /* line-height: 1.2; */
 }
 body h4,
 body h5,
@@ -2195,7 +2195,7 @@ time {
   color: #666;
   text-transform: lowercase;
   font-feature-settings: "smcp" 1, "c2sc" 1;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   font-variant: petite-caps;
   text-transform: lowercase;
   background-position: center 72%;
@@ -2216,6 +2216,8 @@ time a {
 }
 p {
   margin: calc(1em + 0.5vw) 0;
+  font-size: 20px;
+  font-weight: 500 ;
 }
 b,
 strong {
@@ -2401,14 +2403,14 @@ a {
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
   text-decoration-offset: initial;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+  /* -webkit-text-decoration-line: underline;
+  text-decoration-line: underline; */
 }
 a code {
   background: 0 0 !important;
   padding: 0;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
+  /* -webkit-text-decoration-line: underline;
+  text-decoration-line: underline; */
 }
 .load-more {
   text-align: center;
@@ -2486,7 +2488,7 @@ h3 {
   font-size: calc(1.5rem + 0.25vw);
   margin: 0em 0 0em;
   text-transform: capitalize;
-  color: #fff;
+  /* color: #fff; */
   font-family: -apple-system, Arial, BlinkMacSystemFont, Roboto Slab,
     Droid Serif, Segoe UI, Ubuntu, Cantarell, sans-serif;
 }
