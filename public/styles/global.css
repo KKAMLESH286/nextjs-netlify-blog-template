@@ -3153,6 +3153,7 @@ dd {
   color: #811d15;
 }
 .main-nav {
+  height: 3em;
   position: relative;
   display: block;
   min-width: 0;
@@ -3195,10 +3196,10 @@ dd {
     grid-column: auto;
   }
 }
-body:not(.enhanced) .main-nav {
+/* body:not(.enhanced) .main-nav {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-}
+} */
 .main-nav__primary {
   display: flex;
   list-style: none;
